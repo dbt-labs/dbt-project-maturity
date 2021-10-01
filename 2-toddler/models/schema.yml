@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: patient_claim_summary
+    description: model with one record per claim for claims billed at least once
