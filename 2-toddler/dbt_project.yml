@@ -4,7 +4,7 @@ version: '1.0.0'
 config-version: 2
 
 
-profile: 'garage-snowflake'
+profile: 'dbt-learn'
 
 source-paths: ["models"]
 analysis-paths: ["analysis"]
