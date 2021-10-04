@@ -9,7 +9,7 @@ claim_charge_amounts as (
 ),
 
 claim_diagnoses as (
-    select * from {{ ref('int_claim_diagnoses_pivoted') }}
+    select * from {{ ref('int_claim_diagnosis_pivoted') }}
 ),
 
 patients as (

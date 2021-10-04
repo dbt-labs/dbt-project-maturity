@@ -1,7 +1,7 @@
 with 
 
 claim_diagnoses as (
-    select * from {{ ref('claim_diagnosis') }}
+    select * from {{ ref('stg_claim_diagnosis') }}
 ),
 
 final as (
