@@ -1,15 +1,9 @@
 version: 2
 
 sources:
-  - name: billing_data
-    database: raw
-    tables: 
-      - name: claims
-      - name: claim_line
-      - name: claim_diagnosis
-
   - name: ehr_data
     database: raw
+    schema: ehr_data
     tables:        
       - name: doc_specialties
       - name: patients

@@ -17,7 +17,7 @@ patients as (
 ),
 
 doctors as (
-    select * from {{ ref('stg_patients') }}
+    select * from {{ ref('stg_doctors') }}
 ),
 
 specialties as (
