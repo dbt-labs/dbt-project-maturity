@@ -52,7 +52,7 @@ from
     left join specialties
         on docstors.doctor_id = specialties.doctor_id
     
-    where claim.bill_attmps > 0
+    where claims.has_ever_been_billed
 
 )
 

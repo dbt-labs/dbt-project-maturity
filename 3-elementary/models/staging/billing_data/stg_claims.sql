@@ -14,8 +14,14 @@ renamed as (
         car_id as carrier_id,
         npi as npi,
 
+        -- numbers
+        bill_attmps as total_bill_attempts,
+
         -- varchsrs
         ClaimNumber as carrier_claim_number,
+
+        -- booleans 
+        total_bill_attempts > 0 as has_ever_been_billed,
 
         -- dates
         create as created_at,

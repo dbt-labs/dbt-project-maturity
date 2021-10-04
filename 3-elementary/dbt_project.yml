@@ -17,3 +17,10 @@ target-path: "target"
 clean-targets:         
     - "target"
     - "dbt_modules"
+
+
+models:
+  claim_to_fame:
+    marts:
+      +materialized: table
+    
