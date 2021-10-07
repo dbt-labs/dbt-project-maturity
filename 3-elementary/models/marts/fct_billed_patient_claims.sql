@@ -26,31 +26,32 @@ specialties as (
 
 final as (
 
-select 
-    patients.patient_name,
-    patients.date_of_birth,
-    doctors.doctor_name,
-    doctors.npi,
-    specialties.specialty_name,
-    claim_diagnoses.primary_diagosis,
-    claim_diagnoses.primary_diagosis_description,
-    claim_diagnoses.secondary_diagosis,
-    claim_diagnoses.secondary_diagosis_description,
-    claims.carrier_claim_number,
-    ca.total_claim_amnt
-    ca.paid_amnt
-from 
-    patients
-    join claims
-        on patients.patient_id = claims.patient_id
-    left join claim_charge_amounts
-        on claims.claim_id = claim_charge_amounts.claim_id
-    left join claim_diagnoses
-        on claims.claim_id = claim_diagnoses.claim_id
-    left join doctors
-        on claims.doctor_id = doctors.doctor_id
-    left join specialties
-        on docstors.doctor_id = specialties.doctor_id
+    select 
+        claims.claim_id,
+        patients.patient_name,
+        patients.date_of_birth,
+        doctors.doctor_name,
+        doctors.npi,
+        specialties.specialty_name,
+        claim_diagnoses.primary_diagnosis,
+        claim_diagnoses.primary_diagnosis_description,
+        claim_diagnoses.secondary_diagnosis,
+        claim_diagnoses.secondary_diagnosis_description,
+        claims.carrier_claim_number,
+        claim_charge_amounts.total_charge_amount,
+        claim_charge_amounts.total_paid_amount
+    from 
+        patients
+        join claims
+            on patients.patient_id = claims.patient_id
+        left join claim_charge_amounts
+            on claims.claim_id = claim_charge_amounts.claim_id
+        left join claim_diagnoses
+            on claims.claim_id = claim_diagnoses.claim_id
+        left join doctors
+            on claims.doctor_id = doctors.doctor_id
+        left join specialties
+            on doctors.doctor_id = specialties.doctor_id
     
     where claims.has_ever_been_billed
 

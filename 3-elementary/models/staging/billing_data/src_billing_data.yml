@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: billing_data
-    schema: billng_data
+    schema: billing_data
     database: raw
     tables: 
       - name: claims

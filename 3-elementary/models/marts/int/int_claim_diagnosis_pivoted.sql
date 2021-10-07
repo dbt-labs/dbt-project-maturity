@@ -8,12 +8,12 @@ final as (
 
     select 
         claim_id, 
-        max(case when pos = 1 then icd10 else null end) as primary_diagnosis,
-        max(case when pos = 2 then icd10 else null end) as secondary_diagnosis,
-        max(case when pos = 3 then icd10 else null end) as tertiary_diagnosis,
-        max(case when pos = 1 then icd_10_code_descrip else null end) as primary_diagnosis_description,
-        max(case when pos = 2 then icd_10_code_descrip else null end) as secondary_diagnosis_description,
-        max(case when pos = 3 then icd_10_code_descrip else null end) as tertiary_diagnosis_description,
+        max(case when diagnosis_number = 1 then icd_10_code else null end) as primary_diagnosis,
+        max(case when diagnosis_number = 2 then icd_10_code else null end) as secondary_diagnosis,
+        max(case when diagnosis_number = 3 then icd_10_code else null end) as tertiary_diagnosis,
+        max(case when diagnosis_number = 1 then icd_10_code_descrip else null end) as primary_diagnosis_description,
+        max(case when diagnosis_number = 2 then icd_10_code_descrip else null end) as secondary_diagnosis_description,
+        max(case when diagnosis_number = 3 then icd_10_code_descrip else null end) as tertiary_diagnosis_description
     
     from claim_diagnoses
 

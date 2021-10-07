@@ -8,7 +8,7 @@ renamed as (
 
     select 
         id as claim_id,
-        pat_id as claim_id,
+        pat_id as patient_id,
         doc_id as doctor_id,
         prac_id as practice_id,
         car_id as carrier_id,
