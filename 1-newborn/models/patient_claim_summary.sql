@@ -3,15 +3,15 @@
 select 
     p.name_f || ' ' || p.name_l as pat_name,
     p.dob,
-    d.name,
+    d.name as doctor_name,
     d.npi,
     (select max(specialty) from raw.ehr_data.doc_specialties ds where ds.doc_id = d.id) as spec_name,
-    prim_diag.icd10 as primary_diag,
+    prim_diag.icd_10_code as primary_diag,
     prim_diag.icd_10_code_descrip as primary_diag_desc,
-    sec_diag.icd10 as sec_diag,
+    sec_diag.icd_10_code as sec_diag,
     sec_diag.icd_10_code_descrip as sec_diag_desc,
     c.ClaimNumber,
-    ca.total_claim_amnt
+    ca.total_claim_amnt,
     ca.paid_amnt
 from 
     raw.ehr_data.patients p
@@ -22,7 +22,7 @@ from
             cl.claim_id, 
             sum(chrgamnt) total_claim_amnt,
             sum(paid_amnt) paid_amnt
-        from raw.billing_data.claim_line
+        from raw.billing_data.claim_line cl
         where status in ('billed', 'adjudicated', 'closed')
         group by 1
     ) ca 
@@ -50,6 +50,6 @@ from
     left join raw.ehr_data.doctors d
         on c.doc_id = d.id 
 
-where claim.is_test = false 
-and patient.email not like '%@test-patient.com'
-and claim.bill_attmps > 0
+where c.test = false 
+and p.email not like '%@test-patient.com'
+and c.bill_attmps > 0

@@ -1,0 +1,31 @@
+id,chrgamnt,paid_amnt,err_amnt,created,_fivetran_synced_at,cpt,cptdesc,claim_id,status
+1,93.88,23.84,18.67,2021-03-11T18:31:38+00:00,2021-01-11T05:12:58+00:00,051B0AY,"Bypass R Basilic Vein to Up Vein w Autol Art, Open",2,billed
+2,9.59,44.21,43.26,2020-12-13T17:54:31+00:00,2021-09-18T16:27:21+00:00,07C,"Lymphatic and Hemic Systems, Extirpation",4,billed
+3,82.29,13.55,34.23,2021-08-15T01:06:05+00:00,2021-05-29T03:18:23+00:00,0P8M3ZZ,"Division of Right Carpal, Percutaneous Approach",1,billed
+4,35.8,79.02,21.32,2020-11-14T03:30:43+00:00,2021-09-18T09:31:40+00:00,0KBG0ZX,"Excision of Left Trunk Muscle, Open Approach, Diagnostic",1,error
+5,29.07,85.74,66.06,2021-05-30T16:42:53+00:00,2021-08-16T22:51:12+00:00,04790DZ,"Dilation of R Renal Art with Intralum Dev, Open Approach",5,error
+6,34.5,82.94,79.88,2021-07-06T12:30:53+00:00,2020-10-15T02:50:06+00:00,0Q8K4ZZ,"Division of Left Fibula, Percutaneous Endoscopic Approach",5,error
+7,37.88,72.84,72.8,2021-04-16T01:15:07+00:00,2021-07-06T01:30:07+00:00,0SND4ZZ,"Release Left Knee Joint, Percutaneous Endoscopic Approach",4,error
+8,27.01,10.98,4.98,2021-08-28T20:33:33+00:00,2021-05-21T20:06:50+00:00,0NCV3ZZ,"Extirpation of Matter from Left Mandible, Perc Approach",4,error
+9,55.54,32.49,82.82,2021-03-16T23:43:06+00:00,2021-05-02T02:37:03+00:00,0RG63K1,"Fusion Thor Jt w Nonaut Sub, Post Appr P Col, Perc",2,billed
+10,13.48,56.45,45.7,2020-11-12T00:06:59+00:00,2021-03-16T22:38:39+00:00,041C0J1,"Bypass R Com Iliac Art to Celiac Art w Synth Sub, Open",5,billed
+11,37.11,62.42,33.53,2020-12-09T15:32:23+00:00,2021-05-05T01:59:15+00:00,0KXQ4Z0,"Transfer R Up Leg Muscle with Skin, Perc Endo Approach",2,billed
+12,59.16,38.85,45.27,2021-08-29T13:36:56+00:00,2021-03-02T16:05:00+00:00,049W3ZZ,"Drainage of Left Foot Artery, Percutaneous Approach",3,billed
+13,96.88,57.69,38.35,2021-02-16T00:35:43+00:00,2021-07-27T14:13:11+00:00,03170KF,"Bypass R Brach Art to Low Arm Vein w Nonaut Sub, Open",1,billed
+14,63.47,9.06,85.07,2021-04-01T17:23:13+00:00,2021-04-13T13:05:51+00:00,08CF3ZZ,"Extirpation of Matter from Left Retina, Perc Approach",3,adjudicated
+15,57.78,11.23,6.91,2021-07-18T04:29:06+00:00,2021-08-22T14:34:46+00:00,B52KZZZ,Computerized Tomography (CT Scan) of Left Renal Vein,3,adjudicated
+16,31.11,64,40.1,2021-04-19T06:16:15+00:00,2021-05-19T11:24:48+00:00,035S0ZZ,"Destruction of Right Temporal Artery, Open Approach",9,adjudicated
+17,38.19,63.55,63.07,2021-07-01T23:03:39+00:00,2020-11-14T14:46:15+00:00,05HQ0DZ,"Insert Intralum Dev in L Ext Jugular Vein, Open",6,adjudicated
+18,55.74,70.99,6.17,2021-04-08T21:40:19+00:00,2021-09-28T09:41:37+00:00,0SG33K0,"Fusion Lumsac Jt w Nonaut Sub, Ant Appr A Col, Perc",6,adjudicated
+19,45.21,46.89,2.29,2021-01-25T00:44:16+00:00,2020-11-05T22:18:41+00:00,06ND0ZZ,"Release Left Common Iliac Vein, Open Approach",7,adjudicated
+20,94.12,43.05,40.24,2021-05-23T21:23:59+00:00,2021-03-20T21:51:48+00:00,05V00DZ,"Restriction of Azygos Vein with Intralum Dev, Open Approach",9,wait_charges
+21,43.84,59.49,33,2021-09-25T17:50:17+00:00,2021-02-22T11:27:50+00:00,024G072,"Create Mitral Valve from Comn AV Valve w Autol Sub, Open",9,wait_charges
+22,74.94,7.14,16.1,2021-03-21T01:00:58+00:00,2021-07-20T14:37:39+00:00,0JHP0NZ,"Insert Tissue Expander in L Low Leg Subcu/Fascia, Open",6,wait_charges
+23,60.11,23.88,89.16,2021-09-21T19:38:16+00:00,2021-03-17T07:00:34+00:00,0BF13ZZ,"Fragmentation in Trachea, Percutaneous Approach",8,wait_charges
+24,47.54,44.34,4.59,2021-03-23T21:48:54+00:00,2021-09-17T07:18:02+00:00,0QUH47Z,"Supplement Left Tibia with Autol Sub, Perc Endo Approach",10,billed
+25,15.37,45.13,9.07,2021-08-31T11:15:55+00:00,2021-07-01T18:40:56+00:00,0WW60YZ,"Revision of Other Device in Neck, Open Approach",9,billed
+26,66.8,4.18,82.66,2021-07-18T13:23:38+00:00,2021-05-27T22:07:34+00:00,02174ZT,"Bypass Left Atrium to L Pulm Vn, Perc Endo Approach",10,billed
+27,47.95,41.75,53.08,2021-08-07T23:58:28+00:00,2020-11-28T06:13:12+00:00,03993ZX,"Drainage of Right Ulnar Artery, Percutaneous Approach, Diagn",6,billed
+28,89.36,6.26,47.46,2021-04-25T17:52:14+00:00,2021-07-12T05:48:58+00:00,01B80ZZ,"Excision of Thoracic Nerve, Open Approach",8,billed
+29,10.4,67,37.6,2021-07-17T09:22:08+00:00,2021-03-08T14:39:39+00:00,DB1799Z,HDR Brachytherapy of Chest Wall using Iodine 125,9,billed
+30,61.26,90.33,20.6,2021-01-03T05:10:44+00:00,2021-03-22T09:53:30+00:00,0SC84ZZ,"Extirpate of Matter from L Sacroiliac Jt, Perc Endo Approach",7,billed

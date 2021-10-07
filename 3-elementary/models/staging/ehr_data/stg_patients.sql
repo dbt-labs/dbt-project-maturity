@@ -27,7 +27,7 @@ renamed as (
 
         -- dates
         dob as date_of_birth,
-        create as created_at,
+        created as created_at,
         last_login as last_logged_in_at,
         _fivetran_synced_at as _fivetran_synced_at
     

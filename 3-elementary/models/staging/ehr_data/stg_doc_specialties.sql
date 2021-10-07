@@ -16,7 +16,7 @@ renamed as (
         specialty as specialty_name,
 
         -- dates
-        create as created_at,
+        created as created_at,
         _fivetran_synced_at as _fivetran_synced_at
     
     from source
