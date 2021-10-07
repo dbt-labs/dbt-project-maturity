@@ -1,6 +1,7 @@
 -- if it's not abundantly clear this is a completely fabricated query on data that exists nowhere
 
 select 
+    c.id as claim_id,
     p.name_f || ' ' || p.name_l as pat_name,
     p.dob,
     d.name as doctor_name,
