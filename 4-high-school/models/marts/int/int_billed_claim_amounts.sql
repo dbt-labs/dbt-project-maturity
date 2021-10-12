@@ -7,7 +7,7 @@ claim_lines as (
 final as (
     
     select 
-        cl.claim_id, 
+        claim_lines.claim_id, 
         sum(charge_amount) as total_charge_amount,
         sum(paid_amount) as total_paid_amount,
         sum(error_amount) as total_error_amount

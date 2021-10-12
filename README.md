@@ -35,6 +35,8 @@ Features:
     - uses `{{ source() }}` functionality, builds a layer of abstraction between source data and your transformations
   - Macros
     - as above, start to understand some of the key built-in macros that make dbt work. 
+  - Docs
+    - single model documentation for critical models
 
 ### Elementary 
 Now we're starting to let our project free into the world. Time to set some ground rules!
@@ -47,6 +49,8 @@ Features:
     - Style Guide
     - Contribution Guide
   - Testing
+  - Docs
+    - deployed and shared widely!
   - Basic Materializations
   - Deployment (after all of the above)
 
@@ -58,16 +62,21 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
   - Packages
   - Incremental Materializations 
   - Custom Macros (SQL)
+  - Custom Data Test
+  - Custom Deployments (specific jobs)
 
-### College
+### College and Beyond
 
   - Custom Macros (Scripting)
   - Selectors/Tagging
   - Custom Schema and Database Behavior
+  - Custom Generalized Test
+  - Custom Materializations
 ### PhD
 
   - Introspective Analyses
     - Metadata API/dbt artifacts for runtime analyses
     - Project Health Metrics
       - test coverage!
-  - 
+  
+  
