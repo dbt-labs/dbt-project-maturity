@@ -13,7 +13,9 @@ select
     sec_diag.icd_10_code_descrip as sec_diag_desc,
     c.ClaimNumber,
     ca.total_claim_amnt,
-    ca.paid_amnt
+    ca.paid_amnt,
+    c.created, 
+    c.firstbill
 from 
     {{ source('ehr_data', 'patients') }}  p
     join {{ source('billing_data', 'claims') }}  c
