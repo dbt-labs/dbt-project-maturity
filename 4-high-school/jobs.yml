@@ -8,6 +8,7 @@
 jobs:
   - name: nightly_production_run
     cron: "* 4 * * *"
+    source_freshness: true
     execution_steps:
       - dbt deps
       - dbt run 

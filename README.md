@@ -59,24 +59,27 @@ Features:
 Look at your beautiful project, all grown up, about to go to prom. At this stage, your project is learning things fast, and is looking to figure out ways to work smarter not harder 
 (so it spend more time at 7/11 with their friends)
 
+  - Source Freshness
   - Packages
   - Incremental Materializations 
   - Custom Macros (SQL)
-  - Custom Data Test
+  - Custom Data Tests
   - Custom Deployments (specific jobs)
 
 ### College and Beyond
 
   - Custom Macros (Scripting)
   - Selectors/Tagging
-  - Custom Schema and Database Behavior
+  - Custom Schema/Database Behavior
   - Custom Generalized Test
+  - Exposures
+    - For dbt Cloud users: [unlocks status tiles](https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-dashboard-status-tiles)  
 
-### PhD
-
+# These things may be PhD level!
   - Introspective Analyses
     - Metadata API/dbt artifacts for runtime analyses
     - Project Health Metrics
-      - test coverage!
+      - Test Coverage!
     - Custom Materializations
   
+# Omitted Features
