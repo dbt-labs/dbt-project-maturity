@@ -1,0 +1,16 @@
+version: 2
+
+models: 
+  - name: fct_billed_patient_claims
+    description: record per claim with payment, patient and diagnosis data
+    columns:
+      - name: claim_id
+        tests:
+          - unique
+          - not_null
+      - name: total_charge_amount
+        tests:
+          - not_negative
+      - name: total_paid_amount
+        tests:
+          - not_negative

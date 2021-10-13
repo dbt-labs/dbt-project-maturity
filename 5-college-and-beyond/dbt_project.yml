@@ -18,6 +18,9 @@ clean-targets:
     - "target"
     - "dbt_modules"
 
+on-run-end: 
+  - "{{ report_metrics() }}"
+
 
 models:
   claim_to_fame:
