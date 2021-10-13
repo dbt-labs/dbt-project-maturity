@@ -1,0 +1,8 @@
+jobs:
+  - name: production_run
+    cron: * 4 * * *
+    execution_steps:
+      - dbt deps
+      - dbt run 
+      - dbt test
+      - dbt docs generate
