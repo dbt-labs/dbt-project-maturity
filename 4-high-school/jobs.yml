@@ -1,0 +1,24 @@
+jobs:
+  - name: nightly_production_run
+    cron: "* 4 * * *"
+    execution_steps:
+      - dbt deps
+      - dbt run 
+      - dbt test
+      - dbt docs generate
+  - name: full_refresh
+    cron: "* 4 * * 7"
+    execution_steps:
+      - dbt deps
+      - dbt run --full-refresh
+      - dbt test
+      - dbt docs generate
+  - name: pr_check
+    defer_to: nightly_production_run
+    run_on_pr: true
+    git_branch: main
+    execution_steps:
+      - dbt deps
+      - dbt run --full-refresh
+      - dbt test
+      - dbt docs generate
