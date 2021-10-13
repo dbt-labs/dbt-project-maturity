@@ -1,5 +1,8 @@
 # Building a Mature dbt Project from Scratch
 
+![image](https://user-images.githubusercontent.com/73915542/137219625-69b476b7-0db8-40ec-bae4-cd1fa1c9d498.png)
+
+
 Hello! This is the companion repo to the 2021 Coalesce Talk - Building a Mature dbt Porject from Scratch
 (TODO: add link)
 
