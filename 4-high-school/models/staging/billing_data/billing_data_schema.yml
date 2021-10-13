@@ -13,7 +13,7 @@ models:
   - name: stg_claim_lines
     decription: staging model for claim lines table
     columns:
-      - name: claim_lines_id
+      - name: claim_line_id
         description: primary key
         tests:
           - unique

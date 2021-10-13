@@ -8,7 +8,7 @@ renamed as (
 
     select 
         id as claim_id,
-        pat_id as claim_id,
+        pat_id as patient_id,
         doc_id as doctor_id,
         prac_id as practice_id,
         car_id as carrier_id,
@@ -22,9 +22,10 @@ renamed as (
 
         -- booleans 
         total_bill_attempts > 0 as has_ever_been_billed,
+        test as is_test,
 
         -- dates
-        create as created_at,
+        created as created_at,
         firstbill as first_billed_at,
         _fivetran_synced_at as _fivetran_synced_at
 

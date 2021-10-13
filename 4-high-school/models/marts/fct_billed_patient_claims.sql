@@ -1,7 +1,18 @@
+{{
+  config(
+    materialized = 'incremental',
+    unique_key = 'claim_id',
+    )
+}}
+
 with 
 
 claims as (
     select * from {{ ref('stg_claims') }}
+    {% if is_incremental() %}
+      where stg_claims.created_at >= (select max(created_at) from {{ this }})
+    {% endif %}
+
 ),
 
 claim_charge_amounts as (

@@ -19,7 +19,7 @@ renamed as (
         icd10desc as icd_10_code_descrip,
 
         -- dates
-        create as created_at,
+        created as created_at,
         _fivetran_synced_at as _fivetran_synced_at
 
     

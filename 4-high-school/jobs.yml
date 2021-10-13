@@ -1,0 +1,31 @@
+# this is extremely not real code - jobs as code is an as of yet unreleased feature
+# this is simply to illustrate that at this stage, you likely have a more complex deployment strategy:
+  # 1.  a production run that represents a run of the full DAG every night, incremental models running as incrementals
+  # 2.  a production run that represents a full refresh of the full DAG every week, to catch up for any late arriving data
+  # 3.  a PR check run that runs the difference from feature branches and production when a PR is opened in the dbt 
+
+
+jobs:
+  - name: nightly_production_run
+    cron: "* 4 * * *"
+    execution_steps:
+      - dbt deps
+      - dbt run 
+      - dbt test
+      - dbt docs generate
+  - name: full_refresh
+    cron: "* 4 * * 7"
+    execution_steps:
+      - dbt deps
+      - dbt run --full-refresh
+      - dbt test
+      - dbt docs generate
+  - name: pr_check
+    defer_to: nightly_production_run
+    run_on_pr: true
+    git_branch: main
+    execution_steps:
+      - dbt deps
+      - dbt run --full-refresh
+      - dbt test
+      - dbt docs generate

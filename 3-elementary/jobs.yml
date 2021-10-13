@@ -1,0 +1,12 @@
+# this is extremely not real code - jobs as code is an as of yet unreleased feature
+# this is simply to illustrate that at this stage, you likely have a production run
+  # that represents a full refresh of the full DAG every night
+
+jobs:
+  - name: production_run
+    cron: * 4 * * *
+    execution_steps:
+      - dbt deps
+      - dbt run 
+      - dbt test
+      - dbt docs generate
