@@ -71,12 +71,12 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
   - Selectors/Tagging
   - Custom Schema and Database Behavior
   - Custom Generalized Test
-  - Custom Materializations
+
 ### PhD
 
   - Introspective Analyses
     - Metadata API/dbt artifacts for runtime analyses
     - Project Health Metrics
       - test coverage!
-  
+    - Custom Materializations
   
