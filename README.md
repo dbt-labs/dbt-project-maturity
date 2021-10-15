@@ -13,6 +13,7 @@ The purpose of this repository is to give some insight in the use of different d
 Some caveats and assumptions:
   - There are real life use cases where some features get introduced into projects *not* in this order! That is very ok and often necessary!
   - There is no sense of timescale in this presentation! Some teams may mature there project in weeks rather than months, depending on a wide range of factors. It's more important to think about *how* features build upon themselves (and each other) rather than *how quickly* they do so.  
+  - This presentation assumes familiary and comfortability with git and version control, and that all of the projects are already managed in a repository!
 
 
 # Projects
