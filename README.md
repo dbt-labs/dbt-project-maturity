@@ -3,12 +3,11 @@
 ![image](https://user-images.githubusercontent.com/73915542/137219625-69b476b7-0db8-40ec-bae4-cd1fa1c9d498.png)
 
 
-Hello! This is the companion repo to the 2021 Coalesce Talk - [Building a Mature dbt Porject from Scratch]
-(https://coalesce.getdbt.com/talks/how-to-build-a-mature-dbt-project-from-scratch/)
+Hello! This is the companion repo to the 2021 Coalesce Talk - [Building a Mature dbt Project from Scratch](https://coalesce.getdbt.com/talks/how-to-build-a-mature-dbt-project-from-scratch/)
 
 # Purpose
 
-The purpose of this repository is to give some insight in the use of different dbt features at different stages of project maturity. In all likelihood, you encountered dbt for the first time because you first heard about a super cool feature that dbt has (incremental model! macros!) or a neat workflow that dbt can support (PR checks!). But as with any new tool, you have to walk before you can run. Each of the subdirectories represents a rough approximation of what a project would look like as it starts to snowball into a fully mature, ready-for-primetime dbt project. 
+The purpose of this repository is to give some insight in the use of different dbt features at different stages of project maturity. In all likelihood, you encountered dbt for the first time because you first heard about a super cool feature that dbt has (incremental model! macros!) or a neat workflow that dbt can support (PR checks!). But as with any new tool, you have to walk before you can run (and crawl before you can walk!). Each of the subdirectories represents a rough approximation of what a project would look like as it starts to snowball into a fully mature, ready-for-primetime dbt project. 
 
 Some caveats and assumptions:
   - There are real life use cases where some features get introduced into projects *not* in this order! That is very ok and often necessary!
