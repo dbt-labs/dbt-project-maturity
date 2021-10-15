@@ -29,6 +29,7 @@ This project represents truly the bare minimum needed to have dbt do anything of
   - [Commands](https://docs.getdbt.com/reference/dbt-commands)
 
 ### Relevant Commands
+  - `dbt seed`
   - `dbt run`
 ### DAG
 ![image](https://user-images.githubusercontent.com/73915542/137508312-c2ca44ff-ed72-4195-a27e-b60aad0917ec.png)
@@ -50,10 +51,9 @@ This project is just starting to play with its blocks, and see how the world fit
     - last-mile testing for final reporting objects
 
 ### Relevant Commands
-  - `dbt compile`
+  - `dbt seed`
   - `dbt run`
   - `dbt test`
-  - `dbt build`
   - `dbt docs generate`
   - `dbt docs serve`
 
@@ -83,6 +83,7 @@ You wouldn't send your project to school without a list of allergies, so it's ti
 
 ### Relevant Commands
   - `dbt compile`
+  - `dbt seed`
   - `dbt run`
   - `dbt test`
   - `dbt build`
@@ -114,7 +115,7 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
 ### Relevant Commands
   - `dbt deps`
   - `dbt compile`
-  - `dbt source freshness`
+  - `dbt seed`
   - `dbt run`
   - `dbt test`
   - `dbt build`
@@ -140,6 +141,7 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
   - `dbt deps`
   - `dbt compile`
   - `dbt source freshness`
+  - `dbt seed`
   - `dbt run`
   - `dbt test`
   - `dbt build`
