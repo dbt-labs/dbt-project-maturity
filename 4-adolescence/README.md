@@ -1,4 +1,4 @@
-Welcome to the Claim to Fame dbt project!
+## Welcome to the Claim to Fame dbt project!
 
 ### Setting up your computer
 
