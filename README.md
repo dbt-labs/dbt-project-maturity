@@ -21,21 +21,22 @@ Some caveats and assumptions:
 Each project is built on a mock data set of patients, doctors, claims, and other billing data. It was generated via the [Mockaroo API](https://www.mockaroo.com/docs). Huge hat-tip to @krevitt for building a sweet G-sheet x Mockaroo integration! In the `0-raw-data` project, you can find the sample dataset this was built from, so you can load them into your warehouse and run each project to get a feel for how the functionality works!
 
 ## Newborn
-Congratulations! It's a DAG!!
+Congratulations! It's (sorta!) a DAG!!
 
 This project represents truly the bare minimum needed to have dbt do anything of use. It's really only *technically* a dbt project, but is going to need a lot of hand holding to do anything useful and keep it alive. 
 
-Features:
+### Features
   - [Models](https://docs.getdbt.com/docs/building-a-dbt-project/building-models)
   - [Commands](https://docs.getdbt.com/reference/dbt-commands)
 
-Relevant Commands
+### Relevant Commands
   - `dbt run`
+### DAG
 
 ## Toddler
 This project is just starting to play with its blocks, and see how the world fits together. It can now handle multiple models, and it's able to see the difference between raw and transformed data. 
 
-Features:
+### Features
   - [Models](https://docs.getdbt.com/reference/dbt-jinja-functions/ref)
     - adds `{{ ref() }}` functionality! Modularize your model!
   - [Sources](https://docs.getdbt.com/docs/building-a-dbt-project/using-sources)
@@ -47,7 +48,7 @@ Features:
   - [Tests](https://docs.getdbt.com/docs/building-a-dbt-project/tests)
     - last-mile testing for final reporting objects
 
-Relevant Commands
+### Relevant Commands
   - `dbt compile`
   - `dbt run`
   - `dbt test`
@@ -55,11 +56,13 @@ Relevant Commands
   - `dbt docs generate`
   - `dbt docs serve`
 
+### DAG
+
 ## Elementary 
 Now we're starting to let our project free into the world. Time to set some ground rules!
 You wouldn't send your project to school without a list of allergies, so it's time to let people know how they should be interacting with your project
 
-Features:
+### Features
   - [Project Standards and Documentation](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355)
     - not *technically* a dbt feature per se, but critical to scaling!
     - README
@@ -75,17 +78,20 @@ Features:
     - `table`
   - [Deployment](https://docs.getdbt.com/docs/running-a-dbt-project/running-dbt-in-production) (after all of the above!)
 
-Relevant Commands
+### Relevant Commands
   - `dbt compile`
   - `dbt run`
   - `dbt test`
   - `dbt build`
   - `dbt docs generate`
   - `dbt docs serve`
+
+### DAG
 ## High School
 Look at your beautiful project, all grown up, about to go to prom. At this stage, your project is learning things fast, and is looking to figure out ways to work smarter not harder 
 (so it can spend more time at 7/11 with their friends)
 
+### Features
   - Sources 
     - [Freshness](https://docs.getdbt.com/reference/commands/source)
   - [Packages](https://docs.getdbt.com/docs/building-a-dbt-project/package-management)
@@ -99,7 +105,7 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
   - Custom Data Tests (TODO)
   - Custom Deployments (specific jobs)
 
-Relevant Commands
+### Relevant Commands
   - `dbt deps`
   - `dbt compile`
   - `dbt source freshness`
@@ -108,8 +114,11 @@ Relevant Commands
   - `dbt build`
   - `dbt docs generate`
   - `dbt docs serve`
+
+### DAG
 ## College and Beyond
 
+### Features
   - Macros 
     - [Operations](https://docs.getdbt.com/docs/building-a-dbt-project/hooks-operations#operations) for object management
   - [Selectors](https://docs.getdbt.com/reference/node-selection/yaml-selectors)/[Tags](https://docs.getdbt.com/reference/resource-configs/tags)
@@ -119,7 +128,7 @@ Relevant Commands
   - [Exposures](https://docs.getdbt.com/docs/building-a-dbt-project/exposures)
     - For dbt Cloud users: [unlocks status tiles](https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-dashboard-status-tiles)  
   
-Relevant Commands
+### Relevant Commands
   - `dbt deps`
   - `dbt compile`
   - `dbt source freshness`
@@ -129,6 +138,8 @@ Relevant Commands
   - `dbt run-operation`
   - `dbt docs generate`
   - `dbt docs serve`
+
+### DAG
 
 ## These things may be PhD level!
   - Introspective Analyses on dbt-produced artifacts
