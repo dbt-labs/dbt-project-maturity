@@ -12,7 +12,7 @@ The purpose of this repository is to give some insight in the use of different d
 
 Some caveats and assumptions:
   - There are real life use cases where some features get introduced into projects *not* in this order! That is very ok and often necessary!
-  - There is no sense of timescale in this presentation! Some teams may mature there project in weeks rather than months, depending on a wide range of factors. It's more important to think about *how* features build upon themselves (and each other) rather than *how quickly* they do so.  
+  - There is no sense of timescale in this presentation! Some teams may mature their project in weeks rather than months, depending on a wide range of factors. It's more important to think about *how* features build upon themselves (and each other) rather than *how quickly* they do so.  
   - This presentation assumes familiary and comfortability with git and version control, and that all of the projects are already managed in a repository!
 
 
@@ -20,7 +20,7 @@ Some caveats and assumptions:
 
 Each project is built on a mock data set of patients, doctors, claims, and other billing data. It was generated via the [Mockaroo API](https://www.mockaroo.com/docs). Huge hat-tip to @krevitt for building a sweet G-sheet x Mockaroo integration! In the `0-raw-data` project, you can find the sample dataset this was built from, so you can load them into your warehouse and run each project to get a feel for how the functionality works!
 
-## Newborn
+## Infancy
 Congratulations! It's (sorta!) a DAG!!
 
 This project represents truly the bare minimum needed to have dbt do anything of use. It's really only *technically* a dbt project, but is going to need a lot of hand holding to do anything useful and keep it alive. 
@@ -35,7 +35,7 @@ This project represents truly the bare minimum needed to have dbt do anything of
 ![image](https://user-images.githubusercontent.com/73915542/137508312-c2ca44ff-ed72-4195-a27e-b60aad0917ec.png)
 
 
-## Toddler
+## Toddlerhood
 This project is just starting to play with its blocks, and see how the world fits together. It can now handle multiple models, and it's able to see the difference between raw and transformed data. 
 
 ### Features
@@ -62,7 +62,7 @@ This project is just starting to play with its blocks, and see how the world fit
 ![image](https://user-images.githubusercontent.com/73915542/137508486-c2bf7a8d-3380-4971-b536-3e6e12bdc17e.png)
 
 
-## Elementary 
+## Childhood 
 Now we're starting to let our project free into the world. Time to set some ground rules!
 You wouldn't send your project to school without a list of allergies, so it's time to let people know how they should be interacting with your project
 
@@ -94,7 +94,7 @@ You wouldn't send your project to school without a list of allergies, so it's ti
 ![image](https://user-images.githubusercontent.com/73915542/137508810-c3c1aa19-4e8a-417a-8c04-67b048878d15.png)
 
 
-## High School
+## Adolescence
 Look at your beautiful project, all grown up, about to go to prom. At this stage, your project is learning things fast, and is looking to figure out ways to work smarter not harder 
 (so it can spend more time at 7/11 with their friends)
 
@@ -125,7 +125,7 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
 ### DAG
 ![image](https://user-images.githubusercontent.com/73915542/137508810-c3c1aa19-4e8a-417a-8c04-67b048878d15.png)
 
-## College and Beyond
+## Adulthood
 
 ### Features
   - Macros 
@@ -152,7 +152,7 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
 ![image](https://user-images.githubusercontent.com/73915542/137510268-dd2f042d-c31a-41cd-83a3-254a8a04dccc.png)
 
 
-## These things may be PhD level!
+## These things are advanced level!
   - Introspective Analyses on dbt-produced artifacts
     - if Cloud: [Metadata API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/metadata/metadata-overview)
     - if Core: [dbt-artifacts package](https://www.google.com/search?q=dbt+artifacts&rlz=1C5CHFA_enUS926US926&oq=dbt+artifacts&aqs=chrome.0.0i512l2j69i57j69i61l2.1811j0j7&sourceid=chrome&ie=UTF-8)
