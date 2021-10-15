@@ -32,6 +32,8 @@ This project represents truly the bare minimum needed to have dbt do anything of
 ### Relevant Commands
   - `dbt run`
 ### DAG
+![image](https://user-images.githubusercontent.com/73915542/137508312-c2ca44ff-ed72-4195-a27e-b60aad0917ec.png)
+
 
 ## Toddler
 This project is just starting to play with its blocks, and see how the world fits together. It can now handle multiple models, and it's able to see the difference between raw and transformed data. 
@@ -57,6 +59,8 @@ This project is just starting to play with its blocks, and see how the world fit
   - `dbt docs serve`
 
 ### DAG
+![image](https://user-images.githubusercontent.com/73915542/137508486-c2bf7a8d-3380-4971-b536-3e6e12bdc17e.png)
+
 
 ## Elementary 
 Now we're starting to let our project free into the world. Time to set some ground rules!
@@ -87,6 +91,9 @@ You wouldn't send your project to school without a list of allergies, so it's ti
   - `dbt docs serve`
 
 ### DAG
+![image](https://user-images.githubusercontent.com/73915542/137508810-c3c1aa19-4e8a-417a-8c04-67b048878d15.png)
+
+
 ## High School
 Look at your beautiful project, all grown up, about to go to prom. At this stage, your project is learning things fast, and is looking to figure out ways to work smarter not harder 
 (so it can spend more time at 7/11 with their friends)
@@ -116,6 +123,8 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
   - `dbt docs serve`
 
 ### DAG
+![image](https://user-images.githubusercontent.com/73915542/137508810-c3c1aa19-4e8a-417a-8c04-67b048878d15.png)
+
 ## College and Beyond
 
 ### Features
@@ -140,6 +149,8 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
   - `dbt docs serve`
 
 ### DAG
+![image](https://user-images.githubusercontent.com/73915542/137510268-dd2f042d-c31a-41cd-83a3-254a8a04dccc.png)
+
 
 ## These things may be PhD level!
   - Introspective Analyses on dbt-produced artifacts
