@@ -34,6 +34,8 @@ Congratulations! It's (sorta!) a DAG!!
 
 This project represents truly the bare minimum needed to have dbt do anything of use. It's really only *technically* a dbt project, but is going to need a lot of hand holding to do anything useful and keep it alive. 
 
+**Theme:** :baby_bottle: Bare Necessities :straight_ruler:
+
 ### Features
   - [Models](https://docs.getdbt.com/docs/building-a-dbt-project/building-models)
   - [Commands](https://docs.getdbt.com/reference/dbt-commands)
@@ -49,6 +51,8 @@ This project represents truly the bare minimum needed to have dbt do anything of
 
 ## Toddlerhood
 This project is just starting to play with its blocks, and see how the world fits together. It can now handle multiple models, and it's able to see the difference between raw and transformed data. 
+
+**Theme:** :green_square: Building Blocks :blue_square:
 
 ### Features
   - [Models](https://docs.getdbt.com/reference/dbt-jinja-functions/ref)
@@ -78,6 +82,8 @@ This project is just starting to play with its blocks, and see how the world fit
 ## Childhood 
 Now we're starting to let our project free into the world. Time to set some ground rules!
 You wouldn't send your project to school without a list of allergies, so it's time to let people know how they should be interacting with your project
+
+**Theme:** :building_construction: Structure and Rules :straight_ruler:
 
 ### Features
   - [Project Standards and Documentation](https://discourse.getdbt.com/t/how-we-structure-our-dbt-projects/355)
@@ -117,6 +123,8 @@ You wouldn't send your project to school without a list of allergies, so it's ti
 Look at your beautiful project, all grown up, about to go to prom. At this stage, your project is learning things fast, and is looking to figure out ways to work smarter not harder 
 (so it can spend more time at 7/11 with their friends)
 
+**Theme:** :weightlifter: Growth and Optimization :rocket:
+
 ### Features
   - Sources 
     - [Freshness](https://docs.getdbt.com/reference/commands/source)
@@ -152,7 +160,9 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
 - Relevant tool specific channels (i.e. `#tools-looker`, `#tools-meltano`)
 
 ## Adulthood
+By the time your project reaches adulthood, the basics of dbt should be humming along just fine, and that should buy it time to think back on its life, look inward, and fingure out how it fits into the world. How has your project grown and changed? How does it relate to the world around it?  
 
+**Theme:** :notebook: Self Reflection :thinking:
 ### Features
   - Macros 
     - [Operations](https://docs.getdbt.com/docs/building-a-dbt-project/hooks-operations#operations) for object management
