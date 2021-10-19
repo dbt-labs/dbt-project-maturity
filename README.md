@@ -2,17 +2,27 @@
 
 ![image](https://user-images.githubusercontent.com/73915542/137219625-69b476b7-0db8-40ec-bae4-cd1fa1c9d498.png)
 
-
 Hello! This is the companion repo to the 2021 Coalesce Talk - [Building a Mature dbt Project from Scratch](https://coalesce.getdbt.com/talks/how-to-build-a-mature-dbt-project-from-scratch/)
 
-# Purpose
+# Introduction
 
-The purpose of this repository is to give some insight in the use of different dbt features at different stages of project maturity. In all likelihood, you encountered dbt for the first time because you first heard about a super cool feature that dbt has (incremental model! macros!) or a neat workflow that dbt can support (PR checks!). But as with any new tool, you have to walk before you can run (and crawl before you can walk!). Each of the subdirectories represents a rough approximation of what a project would look like as it starts to snowball into a fully mature, ready-for-primetime dbt project. 
+With the explosion in popularity of dbt, and the coinciding explosion in features and capabilities in the tool, it's natural for many of us to find ourselves unsure of where to start. Many people come across dbt through a recommendation of a particularly powerful feature that dbt can support, like complex macros or intricate incremental model logic, but it's both intimidating and unwise to dive directly into the deep end. Like with any tool, it's best to walk before you run, and learn how these features both complement and build on each other so you can be confident you've developed a strong, sustainable, and scalable dbt project.
 
-Some caveats and assumptions:
-  - There are real life use cases where some features get introduced into projects *not* in this order! That is very ok and often necessary!
-  - There is no sense of timescale in this presentation! Some teams may mature their project in weeks rather than months, depending on a wide range of factors. It's more important to think about *how* features build upon themselves (and each other) rather than *how quickly* they do so.  
-  - This presentation assumes familiary and comfortability with git and version control, and that all of the projects are already managed in a repository!
+
+### Purpose of this Repo
+
+The goal of this repository is to show a single dbt project at different lifecycle stages, showing opinionated view of when to introduce certain dbt features into your project. Each stage has a particular theme/purpose, and the listed feature sets connect to that learning goal. This is intended to be both a resource for new dbt users to use as a jumping off point for starting a new project from scratch, and a rubric for existing dbt users to peg their own use of dbt features against this model to find opportunities for growth.
+
+In each stage listed below (and in the accompanying talk), you'll see: 
+1. A theme/purpose for the life stage
+2. Features relevant to the stage (with links to the relevant dbt docs)
+3. A picture of the DAG of the exmaple project in that stage
+4. Links to slack channels on the [dbt Community Slack](https://www.getdbt.com/community/) that would be of interest! 
+
+### Some caveats and assumptions:
+- There are real life use cases where some features get introduced into projects out of the order described here, and that is perfectly reasonable. There are often very justifiable reasons to introduce more advanced dbt features earlier in the development cycle.
+- There is no sense of timescale in this presentation! Some teams may mature their project in weeks rather than months, depending on a wide range of factors. It's more important to think about **how** features build upon themselves (and each other) rather than **how quickly** they do so.
+- This presentation assumes familiary and comfortability with git and version control, and that all of the projects are already managed in a repository
 
 
 # Projects
@@ -34,6 +44,8 @@ This project represents truly the bare minimum needed to have dbt do anything of
 ### DAG
 ![image](https://user-images.githubusercontent.com/73915542/137508312-c2ca44ff-ed72-4195-a27e-b60aad0917ec.png)
 
+### Relevant Community Slack Channels
+- `#advice-dbt-for-beginners`
 
 ## Toddlerhood
 This project is just starting to play with its blocks, and see how the world fits together. It can now handle multiple models, and it's able to see the difference between raw and transformed data. 
@@ -60,7 +72,9 @@ This project is just starting to play with its blocks, and see how the world fit
 ### DAG
 ![image](https://user-images.githubusercontent.com/73915542/137508486-c2bf7a8d-3380-4971-b536-3e6e12bdc17e.png)
 
-
+### Relevant Community Slack Channels
+- `#advice-dbt-for-beginners`
+- `#advice-data-testing`
 ## Childhood 
 Now we're starting to let our project free into the world. Time to set some ground rules!
 You wouldn't send your project to school without a list of allergies, so it's time to let people know how they should be interacting with your project
@@ -89,6 +103,11 @@ You wouldn't send your project to school without a list of allergies, so it's ti
   - `dbt build`
   - `dbt docs generate`
   - `dbt docs serve`
+
+### Relevant Community Slack Channels
+- `#advice-dbt-for-beginners`
+- `#advice-data-testing`
+- `#advice-data-modeling`
 
 ### DAG
 ![image](https://user-images.githubusercontent.com/73915542/137508810-c3c1aa19-4e8a-417a-8c04-67b048878d15.png)
@@ -125,6 +144,13 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
 ### DAG
 ![image](https://user-images.githubusercontent.com/73915542/137508810-c3c1aa19-4e8a-417a-8c04-67b048878d15.png)
 
+### Relevant Community Slack Channels
+- `#advice-dbt-for-beginners`
+- `#advice-data-testing`
+- `#advice-data-modeling`
+- `#advice-dbt-for-power-users`
+- Relevant tool specific channels (i.e. `#tools-looker`, `#tools-meltano`)
+
 ## Adulthood
 
 ### Features
@@ -152,8 +178,17 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
 ### DAG
 ![image](https://user-images.githubusercontent.com/73915542/137510268-dd2f042d-c31a-41cd-83a3-254a8a04dccc.png)
 
+### Relevant Community Slack Channels
+- `#advice-dbt-for-beginners`
+- `#advice-data-testing`
+- `#advice-data-modeling`
+- `#advice-dbt-for-power-users`
+- Relevant tool specific channels (i.e. `#tools-looker`, `#tools-meltano`, `#db-snowflake`)
+- `#towards-analytics-engineering`
+- `#metadata`
 
-## These things are advanced level!
+
+## These things are advanced level (middle aged?)!
   - Introspective Analyses on dbt-produced artifacts
     - if Cloud: [Metadata API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/metadata/metadata-overview)
     - if Core: [dbt-artifacts package](https://www.google.com/search?q=dbt+artifacts&rlz=1C5CHFA_enUS926US926&oq=dbt+artifacts&aqs=chrome.0.0i512l2j69i57j69i61l2.1811j0j7&sourceid=chrome&ie=UTF-8)
@@ -164,7 +199,7 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
 
 Some features are not included in this project, not because they are unimportant, but because they generally are only used as-needed when the specifics of your data/project call for it. 
 
-- Snapshots
-- Seeds (although the raw data project has a good example!)
-- Variables/Environment Variables
-- Analyses
+- [Snapshots](https://docs.getdbt.com/docs/building-a-dbt-project/snapshots)
+- [Seeds](https://docs.getdbt.com/docs/building-a-dbt-project/seeds) (although the raw data project has a good example!)
+- [Variables](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-variables)/[Environment Variables](https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-environment-variables)
+- [Analyses](https://docs.getdbt.com/docs/building-a-dbt-project/analyses)
