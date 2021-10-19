@@ -123,7 +123,7 @@ You wouldn't send your project to school without a list of allergies, so it's ti
 Look at your beautiful project, all grown up, about to go to prom. At this stage, your project is learning things fast, and is looking to figure out ways to work smarter not harder 
 (so it can spend more time at 7/11 with their friends)
 
-### Theme: :weightlifter: Growth and Optimization :rocket:
+### Theme: :weight_lifting: Growth and Optimization :rocket:
 
 ### Features
   - Sources 
