@@ -8,7 +8,6 @@ Hello! This is the companion repo to the 2021 Coalesce Talk - [Building a Mature
 
 With the explosion in popularity of dbt, and the coinciding explosion in features and capabilities in the tool, it's natural for many of us to find ourselves unsure of where to start. Many people come across dbt through a recommendation of a particularly powerful feature that dbt can support, like complex macros or intricate incremental model logic, but it's both intimidating and unwise to dive directly into the deep end. Like with any tool, it's best to walk before you run, and learn how these features both complement and build on each other so you can be confident you've developed a strong, sustainable, and scalable dbt project.
 
-
 ### Purpose of this Repo
 
 The goal of this repository is to show a single dbt project at different lifecycle stages, showing opinionated view of when to introduce certain dbt features into your project. Each stage has a particular theme/purpose, and the listed feature sets connect to that learning goal. This is intended to be both a resource for new dbt users to use as a jumping off point for starting a new project from scratch, and a rubric for existing dbt users to peg their own use of dbt features against this model to find opportunities for growth.
@@ -16,7 +15,7 @@ The goal of this repository is to show a single dbt project at different lifecyc
 In each stage listed below (and in the accompanying talk), you'll see: 
 1. A theme/purpose for the life stage
 2. Features relevant to the stage (with links to the relevant dbt docs)
-3. A picture of the DAG of the exmaple project in that stage
+3. A picture of the DAG of the example project in that stage
 4. Links to slack channels on the [dbt Community Slack](https://www.getdbt.com/community/) that would be of interest! 
 
 ### Some caveats and assumptions:
