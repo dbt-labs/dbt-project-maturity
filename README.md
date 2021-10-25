@@ -21,7 +21,7 @@ In each stage listed below (and in the accompanying talk), you'll see:
 ### Some caveats and assumptions:
 - There are real life use cases where some features get introduced into projects out of the order described here, and that is perfectly reasonable. There are often very justifiable reasons to introduce more advanced dbt features earlier in the development cycle.
 - There is no sense of timescale in this presentation! Some teams may mature their project in weeks rather than months, depending on a wide range of factors. It's more important to think about **how** features build upon themselves (and each other) rather than **how quickly** they do so.
-- This presentation assumes familiary and comfortability with git and version control, and that all of the projects are already managed in a repository
+- This presentation assumes familiarity and comfortability with git and version control, and that all of the projects are already managed in a repository
 
 
 # Projects
