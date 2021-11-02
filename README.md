@@ -132,10 +132,9 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
     - [Incremental](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/configuring-incremental-models)
     - [Ephemeral](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/materializations#ephemeral)
   - Documentation
-    - column-level docs for key metrics/critical columns (TODO)
+    - column-level docs for key metrics/critical columns
   - [Macros](https://docs.getdbt.com/docs/building-a-dbt-project/jinja-macros#macros)
     - In-model SQL simplification
-  - Custom Data Tests (TODO)
   - Custom Deployments (specific jobs)
 
 ### Relevant Commands
