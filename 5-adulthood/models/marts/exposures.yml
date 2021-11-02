@@ -11,6 +11,8 @@ exposures:
     
     depends_on:
       - ref('fct_billed_patient_claims')
+      - ref('dim_patients')
+      - ref('dim_doctors')
       
     owner:
       name: Dave from Data
