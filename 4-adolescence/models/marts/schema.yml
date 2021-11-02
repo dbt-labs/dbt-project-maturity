@@ -18,3 +18,19 @@ models:
         tests:
           - dbt_utils.expression_is_true:
               expression: "> 0"
+
+  - name: dim_patients
+    description: one record per non-test patient in the EHR system
+    columns:
+      - name: patient_id
+        tests:
+          - unique 
+          - not_null 
+  
+  - name: dim_doctors
+    description: one record per non-test doctor in the EHR system
+    columns:
+      - name: doctor_id
+        tests:
+          - unique 
+          - not_null 

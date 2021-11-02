@@ -14,3 +14,38 @@ models:
       - name: total_paid_amount
         tests:
           - not_negative
+
+version: 2
+
+models: 
+  - name: fct_billed_patient_claims
+    description: record per claim with payment, patient and diagnosis data
+    columns:
+      - name: claim_id
+        tests:
+          - unique
+          - not_null
+      - name: total_charge_amount
+        description: total amount charged by the practice on the claim
+        tests:
+          - not_negative
+      - name: total_paid_amount
+        description: total amount paid by the insurance provider or patient on the claim
+        tests:
+          - not_negative
+
+  - name: dim_patients
+    description: one record per non-test patient in the EHR system
+    columns:
+      - name: patient_id
+        tests:
+          - unique 
+          - not_null 
+  
+  - name: dim_doctors
+    description: one record per non-test doctor in the EHR system
+    columns:
+      - name: doctor_id
+        tests:
+          - unique 
+          - not_null 
