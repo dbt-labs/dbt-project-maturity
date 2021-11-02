@@ -149,7 +149,8 @@ Look at your beautiful project, all grown up, about to go to prom. At this stage
   - `dbt docs serve`
 
 ### DAG
-![image](https://user-images.githubusercontent.com/73915542/137508810-c3c1aa19-4e8a-417a-8c04-67b048878d15.png)
+![image](https://user-images.githubusercontent.com/73915542/139877253-60c10dcb-051f-4414-9979-211eb87b99e9.png)
+
 
 ### Relevant Community Slack Channels
 - `#advice-dbt-for-beginners`
@@ -185,7 +186,8 @@ By the time your project reaches adulthood, the basics of dbt should be humming 
   - `dbt docs serve`
 
 ### DAG
-![image](https://user-images.githubusercontent.com/73915542/137510268-dd2f042d-c31a-41cd-83a3-254a8a04dccc.png)
+![image](https://user-images.githubusercontent.com/73915542/139877311-fae7add5-421d-419d-8106-1164f7fce4bb.png)
+
 
 ### Relevant Community Slack Channels
 - `#advice-dbt-for-beginners`
