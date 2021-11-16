@@ -1,0 +1,49 @@
+version: 2
+
+metrics:
+
+# as described in docs right now:
+
+  - name: total_claim_charges
+    label: Total Claim Charges
+    description: total amount charged to the insurance provider
+    model: ref('fct_billed_patient_claims')
+    type: sum
+    sql: total_charge_amount
+    timestamp: created_at
+    time_grains: [day, week, month]
+
+
+  - name: total_claim_payments
+    label: Total Claim Payments
+    description: total amount paid by the insurance provider
+    model: ref('fct_billed_patient_claims')
+    type: sum
+    sql: total_paid_amount
+    timestamp: created_at
+    time_grains: [day, week, month]
+  
+  - name: total_billed_diagnoses
+    label: Total Billed Diagnoses
+    description: distinct count of primary diagnoses observed in billed claims
+    model: ref('fct_billed_patient_claims')
+    type: count_distinct
+    sql: diagnosis_1
+    timestamp: created_at
+    time_grains: [day, week, month]
+
+
+
+# firmly in dave's brain space
+
+  - name: reimbursement_rate
+    description: ratio of payment amount recieved by insurance to charge amount billed to insurance
+    model: defer
+    tyoe: number
+    sql: {{ metric('total_claim_payments') }} / {{ metric('total_claim_charges') }}
+    timestamp: defer
+    dimensions: defer
+    time_grains: [day, week, month]
+
+
+    
