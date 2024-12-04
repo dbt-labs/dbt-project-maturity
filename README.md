@@ -1,3 +1,15 @@
+# ***Archival Notice***
+This repository has been archived.
+
+As a result all of its historical issues and PRs have been closed.
+
+Please *do not clone* this repo without understanding the risk in doing so:
+- It may have unaddressed security vulnerabilities
+- It may have unaddressed bugs
+
+<details>
+   <summary>Click for historical readme</summary>
+
 # Building a Mature dbt Project from Scratch
 
 ![image](https://user-images.githubusercontent.com/73915542/137219625-69b476b7-0db8-40ec-bae4-cd1fa1c9d498.png)
@@ -168,7 +180,7 @@ By the time your project reaches adulthood, the basics of dbt should be humming 
   - [Selectors](https://docs.getdbt.com/reference/node-selection/yaml-selectors)/[Tags](https://docs.getdbt.com/reference/resource-configs/tags)
   - Custom [Schema](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-custom-schemas)/[Database](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-custom-databases) Behavior
   - [Custom Generalized Test](https://docs.getdbt.com/docs/building-a-dbt-project/tests#generic-tests)
-  - [Hooks & Operations](https://docs.getdbt.com/docs/building-a-dbt-project/hooks-operations)
+  - [Hooks &amp; Operations](https://docs.getdbt.com/docs/building-a-dbt-project/hooks-operations)
   - [Exposures](https://docs.getdbt.com/docs/building-a-dbt-project/exposures)
     - For dbt Cloud users: [unlocks status tiles](https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-dashboard-status-tiles)  
   
@@ -201,7 +213,7 @@ By the time your project reaches adulthood, the basics of dbt should be humming 
 ## These things are advanced level (middle aged?)!
   - Introspective Analyses on dbt-produced artifacts
     - if Cloud: [Metadata API](https://docs.getdbt.com/docs/dbt-cloud/dbt-cloud-api/metadata/metadata-overview)
-    - if Core: [dbt-artifacts package](https://www.google.com/search?q=dbt+artifacts&rlz=1C5CHFA_enUS926US926&oq=dbt+artifacts&aqs=chrome.0.0i512l2j69i57j69i61l2.1811j0j7&sourceid=chrome&ie=UTF-8)
+    - if Core: [dbt-artifacts package](https://www.google.com/search?q=dbt+artifacts&amp;rlz=1C5CHFA_enUS926US926&amp;oq=dbt+artifacts&amp;aqs=chrome.0.0i512l2j69i57j69i61l2.1811j0j7&amp;sourceid=chrome&amp;ie=UTF-8)
     - Project Health Metrics
       - Test Coverage
       - Model Runtimes
@@ -213,3 +225,4 @@ Some features are not included in this project, not because they are unimportant
 - [Seeds](https://docs.getdbt.com/docs/building-a-dbt-project/seeds) (although the raw data project has a good example!)
 - [Variables](https://docs.getdbt.com/docs/building-a-dbt-project/building-models/using-variables)/[Environment Variables](https://docs.getdbt.com/docs/dbt-cloud/using-dbt-cloud/cloud-environment-variables)
 - [Analyses](https://docs.getdbt.com/docs/building-a-dbt-project/analyses)
+
